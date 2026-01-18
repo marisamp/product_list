@@ -13,6 +13,8 @@
 - **State Management:** GetX (เรียบง่ายและทรงพลัง)
 - **Networking:** ดึงข้อมูลผ่าน REST API (DummyJSON)
 - **UI Components:** SmartRefresher, Responsive UI (Sizer/ScreenUtil)
+- **Google AI Studio :** ใช้ในการออกแบบ Layout ของ UI
+- **Google Gemini :** ใช้ในการหาข้อมูลเพิ่มเติม
 
 ## 📁 Project Structure
 
