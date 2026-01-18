@@ -31,9 +31,14 @@ lib/
 │   └── routes/         # จัดการเส้นทางหน้าจอ (AppRoutes, AppPages)
 ├── core/               # ส่วนกลางที่ใช้ทั้งแอป (Themes, Colors, Constants)
 └── main.dart           # จุดเริ่มต้นของแอปพลิเคชัน
+```
 
 ## 📸 Screenshots แต่ละหน้าจอ
 - หน้า Error ถ้าไม่มี Internet
-<img width="512" height="512" alt="no-picture" src="https://github.com/user-attachments/assets/5e377648-a13c-4a5d-9715-636cb240d02f" />
+<img width="233" height="507" alt="no-internet" src="https://github.com/user-attachments/assets/92b143a0-11dd-47ef-b15f-0ab5ba0b3d96" />
+
+- หน้า Splash ก่อนเข้า App
+<img width="232" height="505" alt="splash-view" src="https://github.com/user-attachments/assets/dc35af6e-25f8-42a3-b185-03d6ced6354b" />
+
 
 
