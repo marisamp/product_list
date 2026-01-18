@@ -18,16 +18,17 @@
 
 โค้ดหลักจะอยู่ในโฟลเดอร์ `lib` โดยแบ่งสัดส่วนตามหน้าที่ (Pattern):
 
+```text
 lib/
 ├── app/
-│   ├── data/           # จัดการข้อมูล (Models, Services)
+│   ├── data/           # จัดการข้อมูล (Models, Services, Providers)
 │   │   ├── models/     # คลาสสำหรับแปลง JSON เป็น Object
 │   │   └── services/   # ฟังก์ชันเชื่อมต่อ API
 │   ├── modules/        # แบ่งตามหน้าจอ (Features)
-│   │   ├── home/       # หน้ารายการสินค้า (View, Controller)
-│   │   └── detail/     # หน้ารายละเอียดสินค้า (View, Controller)
-│   │   └── splash/     # หน้า Loading ก่อนเข้าแอป (View, Controller)
-│   └── routes/         # จัดการเส้นทางหน้าจอ (AppRoutes, AppPages
+│   │   ├── home/       # หน้ารายการสินค้า (View, Controller, Binding)
+│   │   ├── detail/     # หน้ารายละเอียดสินค้า (View, Controller, Binding)
+│   │   └── splash/     # หน้า Loading ก่อนเข้าแอป
+│   └── routes/         # จัดการเส้นทางหน้าจอ (AppRoutes, AppPages)
 ├── core/               # ส่วนกลางที่ใช้ทั้งแอป (Themes, Colors, Constants)
 └── main.dart           # จุดเริ่มต้นของแอปพลิเคชัน
 
