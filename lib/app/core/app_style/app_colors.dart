@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+
+class AppColors {
+  static Color primaryRedColor = Color(0xFFC0212F);
+  static Color secondryRedColor = Color(0xFFD84040);
+  static Color bgColor = Color(0xFFF8F2DE);
+  static Color whiteColor = Color.fromARGB(255, 255, 255, 255);
+  static Color blackColor = Color.fromARGB(255, 0, 0, 0);
+  static Color grayColor = Color.fromARGB(255, 169, 169, 169);
+  static Color okColor = Colors.lightGreen;
+  static Color yellowColor = Colors.yellow;
+  static Color errorColor = Colors.red;
+}

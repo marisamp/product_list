@@ -1,0 +1,98 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+
+import 'package:mimi_select_product_list_project/app/core/app_style/app_colors.dart';
+import 'package:mimi_select_product_list_project/app/core/app_style/app_text.dart';
+import 'package:mimi_select_product_list_project/app/core/constant.dart';
+
+void showErrorDialog(String message) {
+  Get.defaultDialog(
+    title: AppConstant.errorMsg,
+    titleStyle: TextStyle(
+        color: AppColors.primaryRedColor, fontWeight: FontWeight.bold),
+    middleText: message,
+    middleTextStyle: const TextStyle(color: Colors.black87),
+    textConfirm: AppConstant.oktext,
+    confirmTextColor: AppColors.whiteColor,
+    buttonColor: AppColors.primaryRedColor,
+    backgroundColor: AppColors.whiteColor,
+    onConfirm: () => Get.back(),
+    contentPadding: const EdgeInsets.all(20),
+  );
+}
+
+class NoData extends StatelessWidget {
+  final void Function()? onPressed;
+  const NoData({
+    super.key,
+    this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            width: AppConstant.imgWLogoSize,
+            height: AppConstant.imgWLogoSize,
+            decoration: BoxDecoration(
+              color: AppColors.whiteColor,
+              borderRadius: BorderRadius.circular(AppConstant.logoRadius),
+            ),
+            child: Padding(
+              padding: EdgeInsets.all(AppConstant.defaulthoriPadding),
+              child: Image.asset(
+                AppConstant.logoApp,
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
+          SizedBox(height: 10.h),
+          AppText(
+            AppConstant.noProduct,
+            textAlign: TextAlign.center,
+            fontSize: 20.sp,
+          ),
+          SizedBox(height: 10.h),
+          ElevatedButton(
+            onPressed: onPressed,
+            style: ButtonStyle(
+              backgroundColor: WidgetStatePropertyAll(
+                AppColors.primaryRedColor,
+              ),
+              foregroundColor: WidgetStatePropertyAll(AppColors.whiteColor),
+              padding: WidgetStatePropertyAll(
+                EdgeInsets.symmetric(
+                  horizontal: AppConstant.defaulthoriPadding,
+                  vertical: AppConstant.defaultveriPadding,
+                ),
+              ),
+            ),
+            child: AppText.body(
+              AppConstant.loadingfalse,
+              color: AppColors.whiteColor,
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class NoImg extends StatelessWidget {
+  const NoImg({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Image.asset(
+        AppConstant.noImg,
+        fit: BoxFit.contain,
+      ),
+    );
+  }
+}
