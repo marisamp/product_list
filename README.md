@@ -1,16 +1,38 @@
-# mimi_select_product_list_project
+# 🛍️ MiMi Select
 
-A new Flutter project.
+แอปพลิเคชันสำหรับแสดงรายการสินค้าและดูรายละเอียดสินค้ารายชิ้น โดยดึงข้อมูลจาก REST API 
 
-## Getting Started
+## ✨ Features (ความสามารถของแอป)
+- **Product Listing:** แสดงรายการสินค้าทั้งหมดพร้อมรูปภาพ ราคา และเรตติ้ง
+- **Pull-to-Refresh:** สามารถดึงหน้าจอลงเพื่ออัปเดตข้อมูลใหม่ล่าสุด
+- **Infinite Scroll:** โหลดสินค้าเพิ่มอัตโนมัติเมื่อเลื่อนลงไปถึงด้านล่าง (Pagination)
+- **Product Detail:** กดเพื่อดูรายละเอียดสินค้าฉบับเต็ม
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tech Stack (เทคโนโลยีที่ใช้)
+- **Framework:** Flutter 
+- **State Management:** GetX (เรียบง่ายและทรงพลัง)
+- **Networking:** ดึงข้อมูลผ่าน REST API (DummyJSON)
+- **UI Components:** SmartRefresher, Responsive UI (Sizer/ScreenUtil)
 
-A few resources to get you started if this is your first Flutter project:
+## 📁 Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+โค้ดหลักจะอยู่ในโฟลเดอร์ `lib` โดยแบ่งสัดส่วนตามหน้าที่ (Pattern):
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+lib/
+├── app/
+│   ├── data/           # จัดการข้อมูล (Models, Services)
+│   │   ├── models/     # คลาสสำหรับแปลง JSON เป็น Object
+│   │   └── services/   # ฟังก์ชันเชื่อมต่อ API
+│   ├── modules/        # แบ่งตามหน้าจอ (Features)
+│   │   ├── home/       # หน้ารายการสินค้า (View, Controller)
+│   │   └── detail/     # หน้ารายละเอียดสินค้า (View, Controller)
+│   │   └── splash/     # หน้า Loading ก่อนเข้าแอป (View, Controller)
+│   └── routes/         # จัดการเส้นทางหน้าจอ (AppRoutes, AppPages
+├── core/               # ส่วนกลางที่ใช้ทั้งแอป (Themes, Colors, Constants)
+└── main.dart           # จุดเริ่มต้นของแอปพลิเคชัน
+
+## 📸 Screenshots แต่ละหน้าจอ
+- หน้า Error ถ้าไม่มี Internet
+<img width="512" height="512" alt="no-picture" src="https://github.com/user-attachments/assets/5e377648-a13c-4a5d-9715-636cb240d02f" />
+
+
