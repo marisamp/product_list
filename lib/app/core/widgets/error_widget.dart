@@ -96,3 +96,48 @@ class NoImg extends StatelessWidget {
     );
   }
 }
+
+class NotSupportedView extends StatelessWidget {
+  const NotSupportedView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.primaryRedColor,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 120.w,
+              height: 200.h,
+              decoration: BoxDecoration(
+                color: AppColors.whiteColor,
+                borderRadius: BorderRadius.circular(AppConstant.logoRadius),
+              ),
+              child: Image.asset(
+                AppConstant.logoApp,
+                fit: BoxFit.contain,
+              ),
+            ),
+            SizedBox(height: 10.h),
+            AppText(
+              AppConstant.appName,
+              textAlign: TextAlign.center,
+              fontSize: 12.sp,
+              color: AppColors.whiteColor,
+            ),
+            SizedBox(height: 10.h),
+            AppText(
+              AppConstant.notsupport,
+              textAlign: TextAlign.center,
+              fontSize: 10.sp,
+              color: AppColors.whiteColor,
+            ),
+            SizedBox(height: 10.h),
+          ],
+        ),
+      ),
+    );
+  }
+}

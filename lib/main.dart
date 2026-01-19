@@ -7,6 +7,7 @@ import 'package:mimi_select_product_list_project/app/core/network/no_internet_vi
 import 'package:mimi_select_product_list_project/app/core/route/app_pages.dart';
 import 'package:mimi_select_product_list_project/app/core/route/app_routes.dart';
 import 'package:mimi_select_product_list_project/app/core/constant.dart';
+import 'package:mimi_select_product_list_project/app/core/widgets/error_widget.dart';
 
 void main() {
   Get.put(NetworkController(), permanent: true);
@@ -33,17 +34,26 @@ class MyApp extends StatelessWidget {
             colorScheme:
                 ColorScheme.fromSeed(seedColor: AppColors.primaryRedColor),
           ),
-          builder: (context, child) {      
-            return Obx(() {
-              final networkController = Get.find<NetworkController>();
-              return Stack(
-                children: [
-                  child!, 
-                  if (!networkController.isConnected.value)
-                    const NoInternetView(),
-                ],
-              );
-            });
+          builder: (context, child) {
+            return LayoutBuilder(
+              builder: (context, constraints) {
+                // only support mobile app
+                if (constraints.maxWidth > 600) {
+                  return const NotSupportedView();
+                }
+
+                return Obx(() {
+                  final networkController = Get.find<NetworkController>();
+                  return Stack(
+                    children: [
+                      child!,
+                      if (!networkController.isConnected.value)
+                        const NoInternetView(),
+                    ],
+                  );
+                });
+              },
+            );
           },
         );
       },

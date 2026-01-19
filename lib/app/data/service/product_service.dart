@@ -8,6 +8,7 @@ import 'package:mimi_select_product_list_project/app/data/model/product_data_mod
 class ProductDataService {
   final Dio _dio = DioClient.instance;
 
+  // fetch all product
   Future<ProductDataModel?> fetchProducts({
     int limit = 10,
     int skip = 0,
@@ -22,6 +23,20 @@ class ProductDataService {
     } catch (e) {
       log("Error in ProductDataService: $e");
       return null;
+    }
+  }
+
+  // get product by id
+  Future<Product> getproductbyId({required int  id}) async {
+     try {
+      var url = "${AppConstant.productPath}/$id";
+
+      final response = await _dio.get(url);
+
+      return Product.fromJson(response.data);
+    } catch (e) {
+      log("Error in Get Product By ID Service: $e");
+      return Product(id: null);
     }
   }
 }

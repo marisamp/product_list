@@ -50,4 +50,6 @@ class AppConstant {
   static const String loading = 'Loading...';
   static const String noMoreData = '--- No more products ---';
   static const String loadFailed = 'Load failed. Please try again.';
+  static const String notsupport = 'This app is optimized for mobile only.';
+  static const String backbtn = 'GO BACK';
 }
