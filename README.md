@@ -51,5 +51,16 @@ lib/
 - หน้า Splash ก่อนเข้า App
 <img width="232" height="505" alt="splash-view" src="https://github.com/user-attachments/assets/dc35af6e-25f8-42a3-b185-03d6ced6354b" />
 
+- หน้ารายการสินค้า
+<img width="457" height="811" alt="product-1" src="https://github.com/user-attachments/assets/dd84226a-5f24-4686-bc44-0b1ec51ff8fe" />
+<img width="455" height="806" alt="product-2" src="https://github.com/user-attachments/assets/cb157b48-1e8b-4b48-a39d-ca9e7a36016a" />
+
+- หน้ารายละเอียดสินค้า
+<img width="455" height="813" alt="detail-1" src="https://github.com/user-attachments/assets/a33bc494-ba46-4a3b-8d9b-3136e8b56073" />
+<img width="453" height="807" alt="detail-2" src="https://github.com/user-attachments/assets/f0ce758a-e2f1-478c-9148-d07ae9e0264c" />
+<img width="455" height="808" alt="detail-3" src="https://github.com/user-attachments/assets/61f49cc5-4ef6-44d2-96d6-6d1148ba5930" />
+
+
+
 
 
