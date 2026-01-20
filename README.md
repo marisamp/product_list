@@ -56,9 +56,9 @@ lib/
 <img width="455" height="806" alt="product-2" src="https://github.com/user-attachments/assets/cb157b48-1e8b-4b48-a39d-ca9e7a36016a" />
 
 - หน้ารายละเอียดสินค้า
-<img width="455" height="813" alt="detail-1" src="https://github.com/user-attachments/assets/a33bc494-ba46-4a3b-8d9b-3136e8b56073" />
-<img width="453" height="807" alt="detail-2" src="https://github.com/user-attachments/assets/f0ce758a-e2f1-478c-9148-d07ae9e0264c" />
-<img width="455" height="808" alt="detail-3" src="https://github.com/user-attachments/assets/61f49cc5-4ef6-44d2-96d6-6d1148ba5930" />
+<img width="452" height="807" alt="productall-1" src="https://github.com/user-attachments/assets/bfe58695-e0eb-4ed5-8d28-3665a4e89fa8" />
+<img width="445" height="803" alt="productall-2" src="https://github.com/user-attachments/assets/4a1587f2-79d8-425d-9613-c2bfa64134f9" />
+<img width="448" height="803" alt="productall-3" src="https://github.com/user-attachments/assets/904e3ac6-9406-49e1-8f78-b6435ed102e7" />
 
 
 
