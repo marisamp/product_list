@@ -50,7 +50,9 @@ class _ProductDetailViewState extends State<ProductDetailView> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // back btn
-              GobackBtn(),
+              Row(
+                children: [GobackBtn(), Spacer()],
+              ),
               SizedBox(height: 30.h),
               // content
               Expanded(

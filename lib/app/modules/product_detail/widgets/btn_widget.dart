@@ -20,16 +20,18 @@ class GobackBtn extends StatelessWidget {
         foregroundColor: WidgetStatePropertyAll(
           AppColors.whiteColor,
         ),
-        fixedSize: WidgetStatePropertyAll(Size(180.w, 40.h)),
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Icon(Icons.arrow_back_ios, size: AppConstant.iconsize2),
-          SizedBox(width: 10.w),
-          AppText(AppConstant.backbtn),
-        ],
+      child: Padding(
+        padding:  EdgeInsets.symmetric(horizontal: 5.w,vertical: 10.h),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(Icons.arrow_back_ios, size: AppConstant.iconsize2),
+            SizedBox(width: 5.w),
+            AppText(AppConstant.backbtn),
+          ],
+        ),
       ),
     );
   }
